@@ -11,6 +11,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(opciones => opciones.UseMySQL("Server=localhost;Database=Test1;User=root"));
+
+builder.Services.AddAutoMapper(typeof(Program));
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
