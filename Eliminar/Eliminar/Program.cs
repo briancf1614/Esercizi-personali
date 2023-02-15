@@ -9,8 +9,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-builder.Services.AddDbContext<AppDbContext>(opciones=>opciones.UseMySQL("Server=localhost;User=root;Database=DatabaseScuola"))
+//Serviszio per usare Mysql
+builder.Services.AddDbContext<AppDbContext>(opciones => opciones.UseMySQL("Server=localhost;User=root;Database=DatabaseScuola"));
 
 
 

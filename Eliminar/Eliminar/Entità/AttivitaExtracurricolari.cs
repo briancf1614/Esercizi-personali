@@ -6,5 +6,8 @@
         public string Nome { get; set; } = null!;
         public string Descrizione { get; set; } = null!;
         public DateTime DataInizio { get; set; }
+
+        //Relazioni
+        public HashSet<Studente> Studenti { get; set; } = new HashSet<Studente>();
     }
 }

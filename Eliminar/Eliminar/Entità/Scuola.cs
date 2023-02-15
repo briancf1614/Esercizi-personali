@@ -13,6 +13,12 @@
         public DateTime DataFondazione { get; set; }
         public bool IsCattolica { get; set; }
 
+        //Relazzioni
+
+        public HashSet<Professore> Professori { get; set; } = new HashSet<Professore>();
+
+
+
 
     }
 }
