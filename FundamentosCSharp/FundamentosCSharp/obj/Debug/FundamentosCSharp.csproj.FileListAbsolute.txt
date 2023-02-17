@@ -1,0 +1,8 @@
+C:\Users\brian\Desktop\Esercizi-personali\FundamentosCSharp\FundamentosCSharp\bin\Debug\FundamentosCSharp.exe.config
+C:\Users\brian\Desktop\Esercizi-personali\FundamentosCSharp\FundamentosCSharp\bin\Debug\FundamentosCSharp.exe
+C:\Users\brian\Desktop\Esercizi-personali\FundamentosCSharp\FundamentosCSharp\bin\Debug\FundamentosCSharp.pdb
+C:\Users\brian\Desktop\Esercizi-personali\FundamentosCSharp\FundamentosCSharp\obj\Debug\FundamentosCSharp.csproj.AssemblyReference.cache
+C:\Users\brian\Desktop\Esercizi-personali\FundamentosCSharp\FundamentosCSharp\obj\Debug\FundamentosCSharp.csproj.SuggestedBindingRedirects.cache
+C:\Users\brian\Desktop\Esercizi-personali\FundamentosCSharp\FundamentosCSharp\obj\Debug\FundamentosCSharp.csproj.CoreCompileInputs.cache
+C:\Users\brian\Desktop\Esercizi-personali\FundamentosCSharp\FundamentosCSharp\obj\Debug\FundamentosCSharp.exe
+C:\Users\brian\Desktop\Esercizi-personali\FundamentosCSharp\FundamentosCSharp\obj\Debug\FundamentosCSharp.pdb
