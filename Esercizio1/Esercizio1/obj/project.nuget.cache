@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eJi8E2Zlyx4uRQI7SUaZWBaci2WmIglniwGdAAdtatWpNPgBRI6iWos8zllcRCx9sp6ehQC26/LyZWgJ9JX4Zw==",
+  "dgSpecHash": "qZfVRjH6Q7oqxW4s/pLeYoFoCpZnkzCjzmGZw2eniJBhea93q92GrQFCSXMxwaiGl86hSBmqGqYkFREJPVAV5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\brian\\OneDrive\\Desktop\\Esercizi-personali\\Esercizio1\\Esercizio1\\Esercizio1.csproj",
+  "projectFilePath": "C:\\Users\\brian\\Desktop\\Esercizi-personali\\Esercizio1\\Esercizio1\\Esercizio1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brian\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
