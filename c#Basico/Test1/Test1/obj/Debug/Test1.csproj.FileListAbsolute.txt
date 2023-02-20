@@ -1,0 +1,8 @@
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Test1\Test1\bin\Debug\Test1.exe.config
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Test1\Test1\bin\Debug\Test1.exe
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Test1\Test1\bin\Debug\Test1.pdb
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Test1\Test1\obj\Debug\Test1.csproj.AssemblyReference.cache
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Test1\Test1\obj\Debug\Test1.csproj.SuggestedBindingRedirects.cache
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Test1\Test1\obj\Debug\Test1.csproj.CoreCompileInputs.cache
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Test1\Test1\obj\Debug\Test1.exe
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Test1\Test1\obj\Debug\Test1.pdb
