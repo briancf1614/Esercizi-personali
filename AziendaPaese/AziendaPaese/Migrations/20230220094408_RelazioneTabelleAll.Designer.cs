@@ -3,6 +3,7 @@ using System;
 using AziendaPaese;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AziendaPaese.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230220094408_RelazioneTabelleAll")]
+    partial class RelazioneTabelleAll
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,15 +32,18 @@ namespace AziendaPaese.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.Property<string>("Cap")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Citta")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<DateTime>("DataInizioAttivita")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Indirizzo")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Nome")
@@ -45,12 +51,15 @@ namespace AziendaPaese.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("NomeDirettore")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("NumeroTelefono")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Provincia")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
@@ -104,6 +113,7 @@ namespace AziendaPaese.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.Property<string>("CodiceFiscale")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Cognome")
@@ -114,9 +124,11 @@ namespace AziendaPaese.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Iban")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Nome")

@@ -66,8 +66,7 @@ namespace AziendaPaese.Migrations
                     Iban = table.Column<string>(type: "longtext", nullable: false),
                     Email = table.Column<string>(type: "longtext", nullable: false),
                     Attivo = table.Column<bool>(type: "tinyint(1)", nullable: false),
-                    DataInizioAttivita = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    Discriminator = table.Column<string>(type: "longtext", nullable: false)
+                    DataInizioAttivita = table.Column<DateTime>(type: "datetime(6)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -124,6 +123,48 @@ namespace AziendaPaese.Migrations
                     table.PrimaryKey("PK_ReportiGiornalieri", x => x.Id);
                 })
                 .Annotation("MySQL:Charset", "utf8mb4");
+
+            migrationBuilder.CreateTable(
+                name: "Stagisti",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
+                    Nome = table.Column<string>(type: "longtext", nullable: false),
+                    Cognome = table.Column<string>(type: "longtext", nullable: false),
+                    CodiceFiscale = table.Column<string>(type: "longtext", nullable: false),
+                    NumeroTelefono = table.Column<string>(type: "longtext", nullable: false),
+                    Iban = table.Column<string>(type: "longtext", nullable: false),
+                    Email = table.Column<string>(type: "longtext", nullable: false),
+                    Attivo = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    DataInizioAttivita = table.Column<DateTime>(type: "datetime(6)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Stagisti", x => x.Id);
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
+
+            migrationBuilder.CreateTable(
+                name: "SupervisoriReparto",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
+                    Nome = table.Column<string>(type: "longtext", nullable: false),
+                    Cognome = table.Column<string>(type: "longtext", nullable: false),
+                    CodiceFiscale = table.Column<string>(type: "longtext", nullable: false),
+                    NumeroTelefono = table.Column<string>(type: "longtext", nullable: false),
+                    Iban = table.Column<string>(type: "longtext", nullable: false),
+                    Email = table.Column<string>(type: "longtext", nullable: false),
+                    Attivo = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    DataInizioAttivita = table.Column<DateTime>(type: "datetime(6)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SupervisoriReparto", x => x.Id);
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
         }
 
         /// <inheritdoc />
@@ -146,6 +187,12 @@ namespace AziendaPaese.Migrations
 
             migrationBuilder.DropTable(
                 name: "ReportiGiornalieri");
+
+            migrationBuilder.DropTable(
+                name: "Stagisti");
+
+            migrationBuilder.DropTable(
+                name: "SupervisoriReparto");
         }
     }
 }

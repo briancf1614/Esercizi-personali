@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AziendaPaese.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230219195605_InizialeCreazioneDb")]
+    [Migration("20230220082114_InizialeCreazioneDb")]
     partial class InizialeCreazioneDb
     {
         /// <inheritdoc />
@@ -108,10 +108,6 @@ namespace AziendaPaese.Migrations
                     b.Property<DateTime>("DataInizioAttivita")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -131,10 +127,6 @@ namespace AziendaPaese.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Dipendenti");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Dipendente");
-
-                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("AziendaPaese.Entita.Progetto", b =>
@@ -210,16 +202,84 @@ namespace AziendaPaese.Migrations
 
             modelBuilder.Entity("AziendaPaese.Entita.Stagista", b =>
                 {
-                    b.HasBaseType("AziendaPaese.Entita.Dipendente");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.HasDiscriminator().HasValue("Stagista");
+                    b.Property<bool>("Attivo")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("CodiceFiscale")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Cognome")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("DataInizioAttivita")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Iban")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("NumeroTelefono")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Stagisti");
                 });
 
             modelBuilder.Entity("AziendaPaese.Entita.SupervisoreReparto", b =>
                 {
-                    b.HasBaseType("AziendaPaese.Entita.Dipendente");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.HasDiscriminator().HasValue("SupervisoreReparto");
+                    b.Property<bool>("Attivo")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("CodiceFiscale")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Cognome")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("DataInizioAttivita")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Iban")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("NumeroTelefono")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SupervisoriReparto");
                 });
 #pragma warning restore 612, 618
         }

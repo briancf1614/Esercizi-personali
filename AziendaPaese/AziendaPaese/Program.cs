@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(opciones => opciones.UseMySQL("Server=localhost;User=root;Database=AziendaPaese"));
 
+builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
 

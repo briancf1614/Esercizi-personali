@@ -7,5 +7,9 @@
         public string Descrizione { get; set; } = null!;
         public bool Attivo { get; set; }
         public DateTime DataInizioAttivita { get; set; }
+        //Relazione Tabelle
+        public HashSet<Dipendente> Dipendenti { get; set; }=new HashSet<Dipendente>();
+        public HashSet<Stagista> Stagista { get; set; }=new HashSet<Stagista>();
+        
     }
 }
