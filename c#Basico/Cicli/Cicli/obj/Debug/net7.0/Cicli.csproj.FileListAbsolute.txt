@@ -1,0 +1,15 @@
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Cicli\Cicli\bin\Debug\net7.0\Cicli.exe
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Cicli\Cicli\bin\Debug\net7.0\Cicli.deps.json
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Cicli\Cicli\bin\Debug\net7.0\Cicli.runtimeconfig.json
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Cicli\Cicli\bin\Debug\net7.0\Cicli.dll
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Cicli\Cicli\bin\Debug\net7.0\Cicli.pdb
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Cicli\Cicli\obj\Debug\net7.0\Cicli.csproj.AssemblyReference.cache
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Cicli\Cicli\obj\Debug\net7.0\Cicli.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Cicli\Cicli\obj\Debug\net7.0\Cicli.AssemblyInfoInputs.cache
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Cicli\Cicli\obj\Debug\net7.0\Cicli.AssemblyInfo.cs
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Cicli\Cicli\obj\Debug\net7.0\Cicli.csproj.CoreCompileInputs.cache
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Cicli\Cicli\obj\Debug\net7.0\Cicli.dll
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Cicli\Cicli\obj\Debug\net7.0\refint\Cicli.dll
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Cicli\Cicli\obj\Debug\net7.0\Cicli.pdb
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Cicli\Cicli\obj\Debug\net7.0\Cicli.genruntimeconfig.cache
+C:\Users\brian\OneDrive\Desktop\Esercizi-personali\c#Basico\Cicli\Cicli\obj\Debug\net7.0\ref\Cicli.dll
