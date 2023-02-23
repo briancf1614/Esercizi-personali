@@ -10,7 +10,7 @@ namespace IntroduccionEFCore
         {
         }
         
-        //MODIFICA SELEZIONANDO ENTITA PER ENTITA
+        // MODIFICA SELEZIONANDO ENTITA PER ENTITA
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -22,7 +22,7 @@ namespace IntroduccionEFCore
         }
 
         /*
-        MODIFICA COMPLETAMENTE LE CONVENZIONI DI DEFAULT
+        // MODIFICA COMPLETAMENTE LE CONVENZIONI DI DEFAULT
 
         protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
         {

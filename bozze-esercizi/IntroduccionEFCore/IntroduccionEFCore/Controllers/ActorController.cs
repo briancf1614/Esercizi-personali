@@ -26,5 +26,16 @@ namespace IntroduccionEFCore.Controllers
             await context.SaveChangesAsync();
             return Ok();
         }
+
+        [HttpPost("Varios")]
+
+        public async Task<ActionResult> Post(DTOActor[] actoresDTO)
+        {
+            var actores = mapper.Map<Actor[]>(actoresDTO);
+            context.AddRange(actores);
+            await context.SaveChangesAsync();
+            return Ok();
+        }
+
     }
 }

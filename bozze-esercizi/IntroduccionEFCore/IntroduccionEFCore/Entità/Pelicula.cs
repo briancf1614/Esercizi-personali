@@ -8,8 +8,8 @@
         public bool Encines { get; set; }
 
         //Relazione delle tabelle
-        public HashSet<Comentario> Comentarios { get; set; } = null!;
-        public HashSet<Genero> Generos { get; set; } = null!;
+        public HashSet<Comentario> Comentarios { get; set; } = new HashSet<Comentario>();
+        public HashSet<Genero> Generos { get; set; } = new HashSet<Genero>();
 
         public List<PeliculaActor> PeliculaActors { get; set; } = new List<PeliculaActor>();
 

@@ -10,6 +10,10 @@ namespace IntroduccionEFCore.Utilità
         {
             CreateMap<DTOGenero, Genero>();
             CreateMap<DTOActor, Actor>();
+            CreateMap<DTOPelicula, Pelicula>()
+                .ForMember(ent => ent.Generos, dto => 
+                dto.MapFrom(campo => campo.Generos.Select(id => new Genero { Id = id })));
+            CreateMap<PeliculaActorDTO, PeliculaActor>();
         }
     }
 }
