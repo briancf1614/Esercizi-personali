@@ -27,6 +27,7 @@ namespace PianetaPersone.Controllers
                 Anni = nuevaPersona.Anni,
                 PianetaId =nuevaPersona.PianetaId
             };*/
+            
             var persona = mapper.Map<Persona>(nuevaPersona);
             context.Add(persona);
             await context.SaveChangesAsync();
