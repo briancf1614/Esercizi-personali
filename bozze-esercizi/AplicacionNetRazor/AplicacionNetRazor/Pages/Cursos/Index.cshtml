@@ -1,0 +1,55 @@
+﻿@page
+@model AplicacionNetRazor.Pages.Cursos.IndexModel
+@{
+ViewData["Title"] = "Lista de cursos";
+}
+
+<h1>questo è un test di esempio</h1>
+<p>esempio 1</p>
+
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="text-info">Lista de cursos</h2>
+            </div>
+            <div class="col-sm-6">
+                <a asp-asp-page="Crear" class="btn btn-primary">Crear Nuevo Curso</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        @if (Model.Cursos.Count()>0)
+        {
+            <br /><br />
+            <table class="table table-striped border">
+                <tr class"table table-secondary">
+                    <th>@Html.DisplayNameFor(m=>m.Cursos.First().Id)</th>
+                    <th>@Html.DisplayNameFor(m=>m.Cursos.First().NombreCurso)</th>
+                    <th>@Html.DisplayNameFor(m=>m.Cursos.First().CantidadClases)</th>
+                    <th>@Html.DisplayNameFor(m=>m.Cursos.First().Precio)</th>
+                    <th>@Html.DisplayNameFor(m=>m.Cursos.First().FechaCreacion)</th>
+                    <th>Acciones</th>
+                </tr>
+                @foreach (var item in Model.Cursos)
+                {
+                    <tr>
+                        <td>@Html.DisplayNameFor(m=>m.Cursos.First().Id)</td>
+                        <td>@Html.DisplayNameFor(m=>m.Cursos.First().NombreCurso)</td>
+                        <td>@Html.DisplayNameFor(m=>m.Cursos.First().CantidadClases)</td>
+                        <td>@Html.DisplayNameFor(m=>m.Cursos.First().Precio)</td>
+                        <td>@Html.DisplayNameFor(m=>m.Cursos.First().FechaCreacion)</td>
+                        <td>
+                            <a asp-route-id="@item.Id" asp-page="Editar" class="btn btn-success btn-sm">Editar</a>
+                            <button asp-page-handler="Borrar" asp-route-itemid="@item.Id" onclick="return confirm("Esta seguro hidden querer borrar oncancel=" curso?" class="btn btn-danger btnsm">Borrar</button>
+                        </td>
+                    </tr>
+                }
+            </table>
+
+        }else
+        {
+            <p>No hay cursos</p>
+        }
+    </div>
+</div>
