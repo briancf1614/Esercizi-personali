@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kChhhtqFoco6PQ5Bif4zgUtl+eVsL4FCFi5QtEXULCGTHyzIo7ax7KgqyZkKAFrnQQ1r3TR1xw2+VQA9kLmhXQ==",
+  "dgSpecHash": "iM6Fb4lpwQQ/GhSul1EXQT4IgkS5o/HpCmJy8kYwSsgKm/DDEgxQ66yyHYbLYkFdbDgfw6Eu186s198t5J71ZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\brian\\Desktop\\Esercizi-personali\\bozze-esercizi\\Proyecto_rol\\Proyecto_rol\\Proyecto_rol.csproj",
+  "projectFilePath": "C:\\Users\\brian\\Desktop\\Esercizi-personali\\Proyectos en Visual Studio 2022\\bozze-esercizi\\Proyecto_rol\\Proyecto_rol\\Proyecto_rol.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brian\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",

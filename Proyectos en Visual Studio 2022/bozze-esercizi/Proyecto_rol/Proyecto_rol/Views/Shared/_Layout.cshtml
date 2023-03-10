@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -26,13 +27,24 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Ventas">Ventas</a>
                         </li>
-
-                        <li class="nav-item">
+                        @if(User.IsInRole("Administrador") || User.IsInRole("Supervisor"))
+                        {
+                            <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Compras">Compras</a>
-                        </li>
-
-                        <li class="nav-item">
+                            </li>
+                        }
+                        @if(User.IsInRole("Administrador") || User.IsInRole("Supervisor"))
+                        {
+                            <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Clientes">Clientes</a>
+                            </li>
+                        }
+                        
+
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Acceso" asp-action="Salir">Salir</a>
                         </li>
 
                         <li class="nav-item">

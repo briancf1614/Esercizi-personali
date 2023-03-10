@@ -9074,11 +9074,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brian\\Desktop\\Esercizi-personali\\bozze-esercizi\\Proyecto_rol\\Proyecto_rol\\Proyecto_rol.csproj",
+      "projectUniqueName": "C:\\Users\\brian\\Desktop\\Esercizi-personali\\Proyectos en Visual Studio 2022\\bozze-esercizi\\Proyecto_rol\\Proyecto_rol\\Proyecto_rol.csproj",
       "projectName": "Proyecto_rol",
-      "projectPath": "C:\\Users\\brian\\Desktop\\Esercizi-personali\\bozze-esercizi\\Proyecto_rol\\Proyecto_rol\\Proyecto_rol.csproj",
+      "projectPath": "C:\\Users\\brian\\Desktop\\Esercizi-personali\\Proyectos en Visual Studio 2022\\bozze-esercizi\\Proyecto_rol\\Proyecto_rol\\Proyecto_rol.csproj",
       "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brian\\Desktop\\Esercizi-personali\\bozze-esercizi\\Proyecto_rol\\Proyecto_rol\\obj\\",
+      "outputPath": "C:\\Users\\brian\\Desktop\\Esercizi-personali\\Proyectos en Visual Studio 2022\\bozze-esercizi\\Proyecto_rol\\Proyecto_rol\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
