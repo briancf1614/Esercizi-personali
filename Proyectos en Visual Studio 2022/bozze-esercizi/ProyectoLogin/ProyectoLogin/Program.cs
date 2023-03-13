@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DbpruebaContext>(options =>
 {
-    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnections"),ServerVersion.Parse("iherbafnsdijkfnawijsdksd"));
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnections"),ServerVersion.Parse("10.4.27-MariaDB"));
 });
 
 var app = builder.Build();
@@ -17,7 +17,7 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
-app.UseStaticFiles();
+app.UseStaticFiles(); 
 
 app.UseRouting();
 
