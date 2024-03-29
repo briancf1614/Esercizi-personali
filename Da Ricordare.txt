@@ -1,0 +1,36 @@
+partial prima della classe serve per dividere la classe
+//TODO: commento di task
+const è static di default
+classi anonime var algo = new {x=1,y="algo"}
+^-1 = .Lenght-1
+iniziare con minuscula se è privato e mayuscula se è publico
+una subclase quando viene istanziata ed eredita dalla superclasse se la superclasse ha un costrutore personalizzato anche la subclasse deve avere il costrutore identico ed usare :base(parametriSUPERCLASSE)
+virtual serve per dire che tutte le classi figlie avranno lo stesso metodo modificabile e per modificare i metodi si inserisce il override
+private si vede solo se è dentro de la clase mentre protected ti permette di vedere anche alle classi figlie
+in c# quando eredito una classe e inoltre una interfaccia, prima devo inserire la classe e dopo linterfaccia,dopo se voglio specificare il metodo o propieta da quale interfaccie proviene(casi in cui due interfaccie hanno il metodo identico ma funzionamento diverso) uso nomeinterfaccia.metodo(), per chiamare il metodo specifico si puo usare tipoInterfaccia variabile=ogettoIstanziato(sempre quella storia del fatto que un ogetto puo essere uguale al ogetto figlio, ma non al inverso)
+una clase diventa astratta nel caso ci sia un metodo astratto astratto è la prima classe padre quella che non eredita di nessuno ma ha tanti figli stotfigli
+sealed sirve para decir que es sellada osea que una clase no puede crear clases hijas y ademas hace que metodos no puedan cambiar, osea no puedan ser cambiadas con el override se gli aggiunge sealed al metodo
+-properties incapsulamento usa el get e il set dove poi puoi isare la variabile normalmente come se fosse pubblica e senza usare il metodo getter o setter,
+{quando crei variabile riservi uno spazio nella memoria(nello Stack)
+quando crei variabile/istanza classe riservi spazio nella memoria(nel Heap)
+una volta creata nel heap, si crea una referenzia nello Stack anche se istanzi la stessa classe si crea un altro nel heap}questo avviene enlle classi,
+nel stack si salvano le strutture e se crei una istanza di una struttura anchessa viene salvata nello struct, si crea una copia, e cosi con tutte le istanze mentre loriginale non viene modificata, si usa in codici con tante variabili si usa per rendimento cosa complessa in metodo, si crea copia invece di usare la referenzia devi usare ref se vuoi modificare loriginale, (lezione57)
+-enum=>ci aiuta a maneggiare i valori fissi come costanti esempio giorniSettimana{lunedi,mart,...domenica si puo creare ovunque e funzionera in quel ambito, ma lo piu comune è nel namespace, giacche normalmente viene usato da tutte le classi(se puede istanciar e creare variables de tipo enum)
+distruttore, serve per eliminare dati dal (heap) giacche il "garbage collection" no se elimina de manera inmediata, per esempio connesssioni cn db leetura files, chiudere files(PARA USARLO SE USA ALT+126 ANTES DEL NOME DEL DESTRUCTOR/SE ESCRIVE SIMILE AL constructor)si scrive dentro tutto quello che vuoi che avenga alla fne quando si distrugge tutto como el de angular, un metodo che avviene alla fine
+clases genericas-----ya tu sabess
+list e linkedlist, quando elimini un dato da una lista, tutti gli altri datti scorrono per riempire il dato eliminato, e questo consuma risorse, per questo si usa linkedlist, linkelist (inizio-fine=>inizio-fine) se legan entre campos e se si elimina un dato non si sposta niente in quanto solo si elimina un campo e si collega al prossimo(esempio di linkedlist custom en repository c#basico)
+-Queue colas, firstINfirstOUT metodo Enqueue()/Dequeue() si usa in app o programmi sequenziale tipo in unix controllo di procesi, il procewsore dedica la massima priorità
+-Stack push e pop lo contrario de queue, lastINfirstOUT
+-Dictionary consuma piu risorse è sempre quello di key:valore, tipo json
+----Delegados funzioni che delegano lavori ad altre funzioni (puntatori, referenzia ad un metodo) usando delegados il codice diventa piu riutilizzabile si crea fuori del static void, come se fosse un campo, poi si istanzia dentro dello static con il nome e imetodi desiderati(DELEGATE,ACTION, FUNC, EVENTHANDLER, EVENT, DELEGATE.COMBINE, DELEGATE.REMOVE, MULTICASTDELEGATE)
+----Delegados predicados, Ritornan sempre true o falso, tu istanzi un predicato e dentro meti la funzione che ti serve, dentro la funziona statica mettti il filtro che ti serve, poi la chiami con il predicato o delegado
+----Expresiones lambda, funzioni anonime,lavori di funzioni senza nome x,x=>{codigo};
+----Espresiones Regulares Sequenza di caratteri che funzionanno come patroni di ricerca SI PUO CERCARE IN MICROSOFT, tambian hay:
+(Regex class,bla bla documentacion) è utile si puo cercare codici telefoni in determinati struture | sirve como or hay varios puedes busar  expresiones regulares "QUANTIFICADORES"
+-------------------------------------------------------------------------------------------------------------------
+ogni espresione regulare ha un automata/modello computazional, con input e output e stati //automata finito:
+/^palabra$/=aqui empiesa con la primera palabra y termina con todo el resto "palabra"
+
+-------------------------------------------------------------------------------------------------------------------
+
+WPF sucesor de windwos forms usa xaml- se puede crear todo usando o xaml o las propiedades de visual studio, o tambien usando codigo c# hay un ejemplo en c#basico wpf 

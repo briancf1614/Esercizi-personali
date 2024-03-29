@@ -1,0 +1,17 @@
+en layout linearLAyout se puede configurar donde inicia a traves del gravity
+en android studio al svilupare, è conveniente usare gli sp invece di dp giacche sp considera le dimensioni del android dipendentemente delle dimensioni grandi o piccole delle configurazioni
+los elementos que ese necuentran en legacy son elementos deprecados, elementos viejos que ya no se conviene usar
+para crear un spinner devo por fuersa meter los datos a traves de codigo, y al final meterle un vector de datos como un array donde iran todos esos valores
+en el ejemplo de crear un Spinner con imagenes de layout, lo que se hiso fue crear un nuevo adapter personalizado el cual extends de BaseAdapter y luego se autocrea los metodos necesarios
+RECYCLEVIEW: para crear eso meto el layout y ademas creo una istancia de linearlayoutmanager con el this como parametro luego seto il layout en rv1
+
+In android studio esistono le cartelle Values donde meto colors.xml (biblioteca di colori) e string.xml (biblioteca di parole, utili per il cambio di linguaggio)
+
+
+el R.color.blabla es una referencia a un color no seria el color real, para usar el color real se usa ContextCompat.getcolor(this,referencia);
+
+en kotlin tambien estan las data class
+en java se escrive static mientras que en kotlin se escrive object para crear singleton
+en java y kotlin las sealed sirven para crear una classe con dentro delle subclasse e poi
+en kotlin usava el when {//TODO()} invece in java usava il if e dopo la condizione instanceof
+se puede llamar al mismo construcotr dentro usando la palabra this this(prmtr1,prmtr2,prmtr3)

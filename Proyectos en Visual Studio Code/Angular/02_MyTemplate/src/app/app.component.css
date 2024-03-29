@@ -1,0 +1,15 @@
+.myUnderline {
+    text-decoration: underline;
+}
+.myUnderlineNone {
+    text-decoration: none;
+}
+
+.myRed {
+    color: #f33;
+    font-style: normal;
+}
+.myBlue {
+    color: #33f;
+    font-style: italic;
+}

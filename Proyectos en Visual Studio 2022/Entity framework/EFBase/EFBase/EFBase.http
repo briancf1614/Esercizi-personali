@@ -1,0 +1,6 @@
+@EFBase_HostAddress = http://localhost:5230
+
+GET {{EFBase_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

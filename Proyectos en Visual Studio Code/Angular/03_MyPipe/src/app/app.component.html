@@ -1,0 +1,44 @@
+<h1>{{title}}</h1>
+<hr>
+<!-- Angular è dotato di un set di pipe: Date, UpperCase, LowerCase, Currency e Percentage, ecc. -->
+<p>Testo: {{ myText | titlecase }}</p>
+<!-- Una pipe, quando previsto, può accettare parametri opzionali -->
+<p>Data di nascita: {{ myDate | date:'dd MMMM yyyy' | uppercase }}</p>
+<!-- Parametri con valori multipli: si separano i valori con i due punti.
+Nell'esempio la pipe di currency utilizza i parametri per la valuta, il relativo simbolo e Min Int.Min decimal-Max decimal -->
+<p>Compenso orario: {{ myPrice | currency:'EUR':'symbol':'1.2-3' }}</p>
+<p>Profitto: {{ myProfit | percent }}</p>
+
+<!-- La pipe json ha scopo di supporto allo sviluppo -->
+<p>{{ myJsonObject | json }}</p>
+<!-- La pipe keyvalue trasforma un oggetto o mappa in una serie di coppie di chiavi:valori -->
+<ul>
+    <li *ngFor="let o of myObject | keyvalue">{{ o.key }}: {{o.value}}</li>
+</ul>
+<ul>
+    <li *ngFor="let m of myMap | keyvalue">{{ m.key }}: {{m.value}}</li>
+</ul>
+<!-- La pipe slice crea un array o una stringa contenente un sottoinsieme degli elementi -->
+<ul>
+    <li *ngFor="let a of myArray | slice:0:2">{{a}}</li>
+</ul>
+
+
+<!-- La pipe async sottoscrive una Promise o un Observable e mostra l'ultimo valore emesso -->
+<p>Observable: {{ myObservable$ | async }}</p>
+<hr>
+
+<!-- Pipe personalizzate -->
+<h2>Custom pipes</h2>
+<p>{{ myString | myPipe :'Ciao':'Ola' }}</p>
+
+<!-- <p>Nome: {{ nome | myTranslator }}</p> -->
+<p>Lista:
+    <span *ngFor="let a of myArray; index as i">
+        {{ a | myTranslator }}<span *ngIf='i<2'>, </span>
+    </span>
+</p>
+<hr>
+
+<h2>Pipe usata via Model</h2>
+<p>{{testoPipeModel}}</p>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SolConnect</string>
+
+
+<!--Login-->
+    <string name="login_welcome">Benvenuto</string>
+    <string name="login_name_user">Nome utente</string>
+    <string name="login_password">Password</string>
+    <string name="login_login">Accedi</string>
+<!--        Login_api-->
+            <string name="login_api_user">user</string>
+            <string name="login_api_password">password</string>
+            <string name="login_api_serial_number">id-pda</string>
+
+<!--Menu-->
+    <string name="menu_utente">Utente:</string>
+    <string name="menu_matricola">Matricola:</string>
+    <string name="menu_codice_stabilimento">Cod. Stab.:</string>
+    <string name="menu_descrizione_stabilimento">Des. Stab.:</string>
+    <string name="menu_seleziona_tipo_gas">Seleziona tipo gas:</string>
+
+
+
+
+
+</resources>

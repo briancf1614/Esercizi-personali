@@ -1,0 +1,27 @@
+<h2>{{title}}</h2>
+<!-- 
+ChildComponent.stringaChild = ParentComponent.stringaParent
+ChildComponent.outputChild() = ParentComponent.onOutputParent($event)
+-->
+<p>{{numeroParent}}</p>
+
+<!-- Accede a ChildComponent e ai suoi membri tramite ViewChild -->
+<button (click)='cambiaViewChild()'>View Child </button><br>
+<hr>
+<!--
+Esempio di comunicazione tra componenti:
+1. Tramite [property binding] la proprietà del child viene modificata dalla proprietà del parent
+2. Tramite (event binding) la proprietà del child modifica la proprietà del parent
+3. Tramite Template Reference Variable
+4. Tramite WiewChild
+-->
+<app-child 
+    [stringaChild]="stringaParent" 
+    (outputChild)="onOutputParent($event)" 
+    #childReference
+>
+</app-child>
+<!-- Accede a ChildComponent e ai suoi membri tramite Variable Template Reference -->
+<button (click)='childReference.title="Nuovo title di Child"'>Child Reference Property</button><br>
+<button (click)='childReference.apriAlert(" via Parent Reference")'>Child Reference Method</button><br>
+<hr>

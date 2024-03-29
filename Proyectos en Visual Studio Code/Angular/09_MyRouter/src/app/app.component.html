@@ -1,0 +1,23 @@
+<h1>{{title}}</h1>
+<div>
+    <nav>
+        <!--
+        routerLink: indica la stringa del path definito nel Router,
+        routerLinkActive: indica la classe CSS da applicare al link attivo 
+        fragment: consente di navigare verso le ancore interne (previa abilitazione dell'opzione di scrolling nel router)  
+        -->
+        <a routerLink="uno" routerLinkActive="my-active-link">Uno</a> |
+        <a routerLink="due" routerLinkActive="my-active-link">Due</a> |
+        <a [routerLink]="['tre', guardRole]" routerLinkActive="my-active-link">Tre</a> |
+        <!-- [routerLink]: consente di effettuare il binding per passare parametri e querystring -->
+        <a [routerLink]="['due', myParamMap]">Due + ParamMap</a> |
+        <a [routerLink]="['due']" [queryParams]=myQueryParams>Due + QueryParams</a> |
+    </nav>
+    <hr>
+</div>
+
+<div style="background-color: #fff;">
+    <router-outlet>
+        <!-- Qui viene renderizzato il componente chiamato tramite Router -->
+    </router-outlet>
+</div>

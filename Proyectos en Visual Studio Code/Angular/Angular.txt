@@ -1,0 +1,26 @@
+React = veloccizare Reativita
+Angular = fornisce tutti gli istrumenti neccesari
+TYPESCRITP  = habisogno di una TRASPIRAZIONE/COMPILAZIONE che lo fa diventare in javascript
+
+
+*componenti = piccole parti sezioni di applicazioni (esiste gerarchia) orologio,label,insieme di file 	= 	PIU FACILE DI RIUTILIZZARE
+*Moduli = si gestiscono parti complesse dellapplicazione UN MODULO PUO AVERE DIVERSI COMPONENTI       	= 	MENO FACILE DI RIUTILIZZARE
+*npm = repository dove possiamo cercare i dicversi package Tanto è che installiamo angular usando npm
+
+esistono aplicazioni che usano componenti e basta, ma anche aplicazione con modulie componenti
+componenti standalone?
+Libreria importante RxJS si basa su oggetto Observable FLUSSO DI DATI EMESSI NEL TEMPO(in java stream?) è possibile interceattare e gestirlo il Observable e combinarli
+
+dependency injection,lazy loading onpush change detection, compilazione aot				(STUDIARE)
+
+
+*package.json => file di configurazione di package
+dependenciew = modulli tipo per animations compiler o router
+
+devdependencies =dev dependencies non verrano compilati, strumenti che non verrano nella compilazione( no ci si mete mani di solito)
+
+*angular.json => configurazione di angular tipo cartella dei progetti, librerie 
+
+al avviare un progetto esiste un solo main sia html sia css e sia typescript cè el .spec, los cuales son para los tests
+app module contienen informazione di uso=>
+declarations direttive custom

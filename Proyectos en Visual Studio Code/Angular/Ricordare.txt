@@ -1,0 +1,7 @@
+ng serve -o  apre il server
+
+esistono i cicli di vita dei componenti: export class ProvaComponent implements OnInit, OnChanges, AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,DoCheck, OnDestroy {
+
+data binding:legare dati tra view e model(typescript)=> one way e two way 4 modi di fare dati binding:
+-String interpolation: parla solo di aggiungere codice typescript nel html del componente variabili solo codici di una riga, non si puo di piu
+-property binding: 

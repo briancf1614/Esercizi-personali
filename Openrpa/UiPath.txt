@@ -1,0 +1,3 @@
+Attended Robots: macchine che si eseguono dai umani nelle proprie macchine
+
+Unattended robots: robots che lavorano senza intervento umano diretto in altri macchine

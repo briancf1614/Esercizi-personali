@@ -1,0 +1,15 @@
+<h2>Parent</h2>
+
+<p>{{text}}</p>
+<button (click)="changeText()">Parent A</button>
+
+
+
+
+
+
+
+<hr>
+
+
+<app-child [text]="text" (emitter)="onChangeText($event)"></app-child>

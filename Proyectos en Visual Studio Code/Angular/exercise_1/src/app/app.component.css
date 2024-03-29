@@ -1,0 +1,10 @@
+#container {
+    display: flex;
+}
+#containerA{
+    margin: 20px;
+}
+
+#containerB{
+    margin: 20px;
+}

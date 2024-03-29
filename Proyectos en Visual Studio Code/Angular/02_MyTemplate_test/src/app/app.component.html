@@ -1,0 +1,37 @@
+<h1>{{title}}</h1>
+
+<p>{{myObject.nome}} {{myObject.cognome}} {{myObject.eta}}</p>
+
+<p>{{myObject.nome}} {{myInterface.cognome}} {{myInterface.eta}}</p>
+
+<img src={{myImgUrl}} alt="My image" style="max-width: 30%;">
+
+<p>{{1+1 + myNum + doubleMyNum()}}</p>
+
+<p [innerHTML]="1+1+myNum"></p>
+
+<p bind-innerHtml="1+1+myNum+doubleMyNum()"></p>
+
+
+<input type="number" #myRef>
+
+<button (click)="showRef(myRef.value)">Mostra value</button>
+
+
+
+<!-- Versione JavaScript -->
+<p id="myPar">Testo del <strong>paragrafo</strong></p>
+<button onClick="window.alert(document.querySelector('#myPar').innerHTML)">Mostra innerHTML</button>
+<input type="text" [(ngModel)]="myModel">
+
+<h3>{{myModel}}</h3>
+
+
+
+
+
+
+
+
+
+

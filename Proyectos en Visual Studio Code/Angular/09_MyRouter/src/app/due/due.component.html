@@ -1,0 +1,8 @@
+<h2>{{title}}</h2>
+
+<ng-container *ngFor="let utente of utenti">
+   <!-- <p *ngIf="utente.id === myId"> -->
+   <p *ngIf="utente.id === id">
+        <strong>{{utente.nome}} {{utente.cognome}}</strong><br>{{utente.motto}}
+    </p>
+</ng-container>

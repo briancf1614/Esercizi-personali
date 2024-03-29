@@ -1,0 +1,9 @@
+<h2>{{title}}</h2>
+<!-- Direttive e pipe standard necessitano del modulo CommonModule-->
+<p *ngIf="0==0">Direttiva attiva</p>
+<p>{{text | uppercase}}</p>
+
+<!-- Pipe custom e Direttive custom necessitano del modulo a cui appartengono -->
+<p>Il codice segreto è: {{ secretValue | myPipe }}</p>
+<hr>
+<app-my-child></app-my-child>

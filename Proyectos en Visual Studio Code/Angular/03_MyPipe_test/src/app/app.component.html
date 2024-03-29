@@ -1,0 +1,26 @@
+<h1>{{ title }}</h1>
+<hr>
+
+<p>Testo: {{myText | titlecase}}</p>
+ <p>Data di nascita: {{myDate | date:"dd MMMM yyyy" | uppercase}}</p>
+
+<p>{{myJsonObject | json}}</p>
+
+<ul>
+  <li *ngFor="let o of myObject | keyvalue">{{o.key}}::::::{{o.value}}</li>
+</ul>
+
+<ul>
+  <li *ngFor="let o of myMap | keyvalue">{{o.value}}:{{o.key}}</li>
+</ul>
+
+<ul>
+  <li *ngFor="let o of myArray |slice:0:2">{{o}}</li>
+</ul>
+
+
+<p>Observable: {{myObservable$ | async}}</p>
+
+<p>{{myString | myPipe:myArray}}</p>
+
+

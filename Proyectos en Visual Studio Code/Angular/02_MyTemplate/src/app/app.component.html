@@ -1,0 +1,137 @@
+<!--
+Il template è codice HTML contenente sintassi del modello Angular che modifica 
+l'HTML in base alla logica dell'app e allo stato dei dati dell'app e del DOM. 
+Il template può utilizzare il data binding per coordinare l'app e i dati DOM, 
+le direttive per applicare la logica dell'app a ciò che viene visualizzato, 
+le pipe per trasformare i dati prima che vengano visualizzati.
+-->
+<h1>{{title}}</h1>
+<hr>
+<h2>Expressions</h2>
+<hr>
+<!-- INTERPOLAZIONE -->
+<h3>Interpolazione</h3>
+<!-- Interpolazione dei valori delle proprietà dell'oggetto  -->
+<p>{{myObject.nome}} {{myObject.cognome}} {{myObject.eta}}</p>
+<!-- Interpolazione dei valori delle proprietà dell'interfaccia  -->
+<p>{{myInterface.nome}} {{myInterface.cognome}} {{myInterface.eta}}</p>
+
+<!-- Interpolazione URL Immagine -->
+<img src={{myImgUrl}} alt="My image" style="max-width: 100%">
+<!-- Interpolazione di espressione -->
+<p>{{1 + 1 + myNum + doubleMyNum()}}</p>
+<hr>
+<!-- Property Binding, forma alternativa all'interpolazione dal risultato identico -->
+<h3>Property Binding</h3>
+<!-- Utilizza [nomeProprietà] del tag HTML -->
+<p [innerHtml]="1 + 1 + myNum + doubleMyNum()"></p>
+<!-- Forma alternativa utilizza bind-nomeProprietà -->
+<p bind-innerHtml="1 + 1 + myNum + doubleMyNum()"></p>
+<hr>
+
+<!-- Variabile di template: variabile non dichiarata nella classe del componente
+Può essere acceduta dal component tramite @ViewChild -->
+<h3>Template Reference Variable</h3>
+<input type="number" #myRef>
+<!-- Riferimento alla variabile -->
+<button (click)="showRef(myRef.value)">Mostra Value</button>
+<!-- Altro esempio -->
+<p #myPar>Testo del paragrafo con <span>span</span></p>
+<button (click)="showRef(myPar.innerHTML)">Mostra innerHTML</button>
+<!-- Versione JavaScript -->
+<p id="myPar">Testo del <strong>paragrafo</strong></p>
+<button onClick="window.alert(document.querySelector('#myPar').innerHTML)">Mostra innerHTML</button>
+<hr>
+
+<!-- Two-way data binding grazie alla direttiva ngModel (effettua il binding tra template e class) -->
+<h3>Two-way data binding</h3>
+<input type="text" [(ngModel)]="myModel" />
+<p>{{myModel}}</p>
+<hr>
+
+<!-- DIRETTIVE -->
+<h2>Direttive</h2>
+<hr>
+<!-- Direttive strutturali.
+L'asterisco nasconde la reale struttura della costruzione dell'elemento.
+Internamente, Angular traduce l'attributo in un elemento <ng-template>, avvolto attorno all'elemento host 
+<ng-template [ngIf]="myNum2>0">
+    <p>Il valore doppio di {{myNum2}} è {{myNum2*2}}</p>
+</ng-template>
+<ng-template [ngIf]="myNum2<=0">
+    <p>Non posso moltiplicare questo numero</p>
+</ng-template>
+-->
+<!-- Direttiva Strutturale ngIf: genera un blocco di elementi DOM in base alla valutazione di espressione booleana -->
+<h3>ngIf</h3>
+<input type="number" [(ngModel)]="myNum2" />
+<p *ngIf='myNum2>0'>Il valore doppio di {{myNum2}} è {{myNum2*2}}</p>
+<p *ngIf='myNum2<=0'>Non posso moltiplicare questo numero</p>
+
+<!-- A partire da Angular 4 anche: else  -->
+<p *ngIf='myNum2>0; else myRefNgTemplate'>Il valore doppio di {{myNum2}} è {{myNum2*2}}</p>
+<ng-template #myRefNgTemplate>
+    <p>Non posso moltiplicare questo numero</p>
+</ng-template>
+<hr>
+
+<!-- Direttiva Strutturale ngFor -->
+<h3>ngFor</h3>
+<!-- Ciclo For di Array -->
+<ul>
+    <li *ngFor="let name of myNames; let i = index">{{i}} : {{name}}</li>
+</ul>
+<!-- Versione JavaScript
+NB. angular non esegue il codice presente in <script> per motivi di sicurezza 
+<ul id="myUl"></ul>
+<script>
+let myUl = document.querySelector("#myUl");
+for(let name of myNames) {
+    myLi = document.createElement("li");
+    myLi.textContent = name;
+    myUl.appendChild(myLi);
+}
+</script>
+-->
+<!-- Ciclo For di Oggetti -->
+<ol>
+    <li *ngFor="let obj of myObjects">{{obj.nome}} {{obj.cognome}} {{obj.eta}}</li>
+</ol>
+<table border="1">
+    <tr *ngFor="let myInterface of myInterfaces">
+        <td>{{myInterface.nome}}</td>
+        <td>{{myInterface.cognome}}</td>
+        <td>{{myInterface.eta}}</td>
+    </tr>
+</table>
+<hr>
+
+<!-- Direttiva Strutturale ngSwitch -->
+<h3>ngSwitch</h3>
+<div [ngSwitch]="myNum2">
+    <p *ngSwitchCase=0>0 non è sufficiente</p>
+    <p *ngSwitchCase=1>1 è sufficiente</p>
+    <p *ngSwitchDefault>{{myNum2}} è eccessivo</p>
+</div>
+<hr>
+
+<!-- Direttiva Attributo ngStyle -->
+<h3>ngStyle</h3>
+<input type="color" #myCol />
+<input type="range" [(ngModel)]="mySize" />
+<p [ngStyle]="{'color': myCol.value, 'font-size': mySize+'px'}">
+    Testo con stile ngStyle
+</p>
+<hr>
+
+<!-- Direttiva Attributo ngClass -->
+<h3>ngClass</h3>
+<select [(ngModel)]="myCssClass">
+    <option value="myRed" selected>Red</option>
+    <option value="myBlue">Blue</option>
+</select>
+<div [ngClass]="myCssClass">
+    <h3>Titolo</h3>
+    <p>Testo con classe di stile ngClass</p>
+    <hr>
+</div>

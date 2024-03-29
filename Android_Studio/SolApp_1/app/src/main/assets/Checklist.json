@@ -1,0 +1,49 @@
+{
+  "esito": {
+    "errore": 0,
+    "descrizione": ""
+  },
+  "pda": {
+    "modello": "",
+    "versione_sw": "",
+    "serial_number": ""
+  },
+  "info_step": {
+    "infos" : {
+    }
+
+  },
+  "passo": {
+    "id": "",
+    "matricola_oper": "",
+    "operatore": "",
+    "ciclo": "",
+    "campi": [
+      {
+        "id": "",
+        "tipo": "",
+        "msg": "",
+        "valore": "",
+        "stylelabel": "",
+        "stylevalue": "",
+        "urlverifica": "",
+        "chiavi_valori": [
+          {
+            "chiave": "",
+            "valore": "",
+            "stylechiave": "",
+            "stylevalore": ""
+          }
+        ]
+      }
+    ],
+    "transizioni": [
+      {
+        "id": "",
+        "msg": "",
+        "style" : "",
+        "url": ""
+      }
+    ]
+  }
+}

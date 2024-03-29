@@ -1,0 +1,22 @@
+2024-03-17 13:57:33.706 +01:00 [INF] Now listening on: https://localhost:7177
+2024-03-17 13:57:33.731 +01:00 [INF] Now listening on: http://localhost:5019
+2024-03-17 13:57:33.776 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-17 13:57:33.776 +01:00 [INF] Hosting environment: Development
+2024-03-17 13:57:33.776 +01:00 [INF] Content root path: C:\Users\brian\Desktop\Esercizi-personali\Proyectos en Visual Studio 2022\Entity framework\Serilog\SerilogTest1\SerilogTest1
+2024-03-17 13:57:34.491 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - null null
+2024-03-17 13:57:34.635 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - 200 null text/html;charset=utf-8 146.4238ms
+2024-03-17 13:57:34.711 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - null null
+2024-03-17 13:57:34.711 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-17 13:57:34.718 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 7.5636ms
+2024-03-17 13:57:34.759 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.639ms
+2024-03-17 13:57:34.952 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - null null
+2024-03-17 13:57:35.067 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 114.9037ms
+2024-03-17 13:58:10.806 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7177/WeatherForecast - null null
+2024-03-17 13:58:10.817 +01:00 [INF] Executing endpoint 'SerilogTest1.Controllers.WeatherForecastController.Get (SerilogTest1)'
+2024-03-17 13:58:10.827 +01:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[SerilogTest1.WeatherForecast] Get() on controller SerilogTest1.Controllers.WeatherForecastController (SerilogTest1).
+2024-03-17 13:58:10.830 +01:00 [INF] Hola amigos acabo de leer el meteo [{"Date":"2024-03-18","TemperatureC":-11,"TemperatureF":13,"Summary":"Scorching","$type":"WeatherForecast"},{"Date":"2024-03-19","TemperatureC":44,"TemperatureF":111,"Summary":"Mild","$type":"WeatherForecast"},{"Date":"2024-03-20","TemperatureC":21,"TemperatureF":69,"Summary":"Mild","$type":"WeatherForecast"},{"Date":"2024-03-21","TemperatureC":9,"TemperatureF":48,"Summary":"Warm","$type":"WeatherForecast"},{"Date":"2024-03-22","TemperatureC":27,"TemperatureF":80,"Summary":"Chilly","$type":"WeatherForecast"}]
+2024-03-17 13:58:10.841 +01:00 [INF] Executing ObjectResult, writing value of type 'SerilogTest1.WeatherForecast[]'.
+2024-03-17 13:58:10.851 +01:00 [INF] Executed action SerilogTest1.Controllers.WeatherForecastController.Get (SerilogTest1) in 21.2744ms
+2024-03-17 13:58:10.851 +01:00 [INF] Executed endpoint 'SerilogTest1.Controllers.WeatherForecastController.Get (SerilogTest1)'
+2024-03-17 13:58:10.852 +01:00 [INF] HTTP GET /WeatherForecast responded 200 in 38.2137 ms
+2024-03-17 13:58:10.852 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7177/WeatherForecast - 200 null application/json; charset=utf-8 46.7168ms

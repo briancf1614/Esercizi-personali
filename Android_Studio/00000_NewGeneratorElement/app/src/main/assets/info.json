@@ -1,0 +1,346 @@
+{
+  "esito": {
+    "errore": "0",
+    "descrizione": "OK"
+  },
+  "operatore": {
+    "nome_cognome": "Moreno Cecconato",
+    "matricola": "U0003",
+    "profili": null
+  },
+  "checklistoperativa": {
+    "codice_lotto": "S31X0080023101800001",
+    "fase_corrente": "0",
+    "passo_corrente": "0",
+    "check_list_operativa_template": null,
+    "versione_template": "2.0",
+    "tipo_gas": "X00800",
+    "desc_gas": "GAS LOX TER.DOMICIL.IN U.B.",
+    "fasi": [
+      {
+        "id": "0",
+        "descrizione": "Controllo Qualità precariamento",
+        "passi": [
+          {
+            "id": "0",
+            "matricola_oper": "",
+            "operatore": "",
+            "campi": [
+              {
+                "id": "0",
+                "tipo": "check",
+                "msg": "eliminazione etichette lotti precedenti",
+                "valore": "false"
+              },
+              {
+                "id": "1",
+                "tipo": "textarea",
+                "msg": "Note:",
+                "valore": ""
+              }
+            ],
+            "transizioni": [
+              {
+                "id": "0",
+                "msg": "Successivo",
+                "url": "CLO.aspx"
+              }
+            ]
+          },
+          {
+            "id": "1",
+            "matricola_oper": "",
+            "operatore": "",
+            "campi": [
+              {
+                "id": "0",
+                "tipo": "check",
+                "msg": "ispezione visiva esterna recipienti",
+                "valore": "false"
+              },
+              {
+                "id": "1",
+                "tipo": "textarea",
+                "msg": "Note:",
+                "valore": ""
+              }
+            ],
+            "transizioni": [
+              {
+                "id": "0",
+                "msg": "Successivo",
+                "url": "CLO.aspx"
+              }
+            ]
+          },
+          {
+            "id": "2",
+            "matricola_oper": "",
+            "operatore": "",
+            "campi": [
+              {
+                "id": "0",
+                "tipo": "check",
+                "msg": "Verificare indicatore di livello",
+                "valore": "false"
+              },
+              {
+                "id": "1",
+                "tipo": "textarea",
+                "msg": "Note:",
+                "valore": ""
+              }
+            ],
+            "transizioni": [
+              {
+                "id": "0",
+                "msg": "Successivo",
+                "url": "CLO.aspx"
+              }
+            ]
+          },
+          {
+            "id": "3",
+            "matricola_oper": "",
+            "operatore": "",
+            "campi": [
+              {
+                "id": "0",
+                "tipo": "check",
+                "msg": "Verificare selettore flusso",
+                "valore": "false"
+              },
+              {
+                "id": "1",
+                "tipo": "textarea",
+                "msg": "Note:",
+                "valore": ""
+              }
+            ],
+            "transizioni": [
+              {
+                "id": "0",
+                "msg": "Successivo",
+                "url": "CLO.aspx"
+              }
+            ]
+          },
+          {
+            "id": "4",
+            "matricola_oper": "",
+            "operatore": "",
+            "campi": [
+              {
+                "id": "0",
+                "tipo": "check",
+                "msg": "Verificare idoneità collaudo",
+                "valore": "false"
+              },
+              {
+                "id": "1",
+                "tipo": "textarea",
+                "msg": "Note:",
+                "valore": ""
+              }
+            ],
+            "transizioni": [
+              {
+                "id": "0",
+                "msg": "Successivo",
+                "url": "CLO.aspx"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1",
+        "descrizione": "Riempimento",
+        "passi": [
+          {
+            "id": "0",
+            "matricola_oper": "",
+            "operatore": "",
+            "campi": [
+              {
+                "id": "0",
+                "tipo": "check",
+                "msg": "Come da istr. operative in NR.003.XX.DITP.x",
+                "valore": "false"
+              },
+              {
+                "id": "1",
+                "tipo": "textarea",
+                "msg": "Note:",
+                "valore": ""
+              }
+            ],
+            "transizioni": [
+              {
+                "id": "0",
+                "msg": "Successivo",
+                "url": "CLO.aspx"
+              }
+            ]
+          },
+          {
+            "id": "1",
+            "matricola_oper": "",
+            "operatore": "",
+            "campi": [
+              {
+                "id": "0",
+                "tipo": "input",
+                "msg": "Pressione rampa (<3,40 Bar)",
+                "valore": ""
+              }
+            ],
+            "transizioni": [
+              {
+                "id": "0",
+                "msg": "Successivo",
+                "url": "CLO.aspx"
+              }
+            ]
+          },
+          {
+            "id": "2",
+            "matricola_oper": "",
+            "operatore": "",
+            "campi": [
+              {
+                "id": "0",
+                "tipo": "check",
+                "msg": "Verifica riempimento",
+                "valore": "false"
+              },
+              {
+                "id": "1",
+                "tipo": "textarea",
+                "msg": "Note:",
+                "valore": ""
+              }
+            ],
+            "transizioni": [
+              {
+                "id": "0",
+                "msg": "Successivo",
+                "url": "CLO.aspx"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "descrizione": "Controllo Qualità postcariamento",
+        "passi": [
+          {
+            "id": "0",
+            "matricola_oper": "",
+            "operatore": "",
+            "campi": [
+              {
+                "id": "0",
+                "tipo": "check",
+                "msg": "Chiusura valvola completata",
+                "valore": "false"
+              },
+              {
+                "id": "1",
+                "tipo": "textarea",
+                "msg": "Note:",
+                "valore": ""
+              }
+            ],
+            "transizioni": [
+              {
+                "id": "0",
+                "msg": "Successivo",
+                "url": "CLO.aspx"
+              }
+            ]
+          },
+          {
+            "id": "1",
+            "matricola_oper": "",
+            "operatore": "",
+            "campi": [
+              {
+                "id": "0",
+                "tipo": "check",
+                "msg": "Assenza perdite e/o formazione di ghiaccio",
+                "valore": "false"
+              },
+              {
+                "id": "1",
+                "tipo": "textarea",
+                "msg": "Note:",
+                "valore": ""
+              }
+            ],
+            "transizioni": [
+              {
+                "id": "0",
+                "msg": "Successivo",
+                "url": "CLO.aspx"
+              }
+            ]
+          },
+          {
+            "id": "2",
+            "matricola_oper": "",
+            "operatore": "",
+            "campi": [
+              {
+                "id": "0",
+                "tipo": "check",
+                "msg": "Etich. di sicurezza/ADR corretta e leggibile",
+                "valore": "false"
+              },
+              {
+                "id": "1",
+                "tipo": "textarea",
+                "msg": "Note:",
+                "valore": ""
+              }
+            ],
+            "transizioni": [
+              {
+                "id": "0",
+                "msg": "Successivo",
+                "url": "CLO.aspx"
+              }
+            ]
+          },
+          {
+            "id": "3",
+            "matricola_oper": "",
+            "operatore": "",
+            "campi": [
+              {
+                "id": "0",
+                "tipo": "check",
+                "msg": "Verificare foglietti illustrativi",
+                "valore": "false"
+              },
+              {
+                "id": "1",
+                "tipo": "textarea",
+                "msg": "Note:",
+                "valore": ""
+              }
+            ],
+            "transizioni": [
+              {
+                "id": "0",
+                "msg": "Successivo",
+                "url": "CLO.aspx"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

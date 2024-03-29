@@ -1,0 +1,3 @@
+linguaggio interpretato, orientato ad ogetti,imperativo(paso a paso) case sensitive, basado en prototipos istancias e classless, tipado debil(string numero) 
+javascript serve per che un sito sia dinamico
+onclick è una propireta che si puo usare in tutti gli elementi si puo fare come in css metere come proprieta o come elemento o creare un file unico e poi chiamarlo

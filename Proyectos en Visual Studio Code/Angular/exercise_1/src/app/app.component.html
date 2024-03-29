@@ -1,0 +1,16 @@
+<h1>App-Componente</h1>
+<p>{{text}}</p>
+<button (click)="chageText()">Root A</button>
+<hr>
+<div id="container">
+
+    <div id="containerA">
+        <app-parent [text]="text" (emitter)="onChangeText($event)"></app-parent>
+    </div>
+
+    <div id="containerB">
+        <app-parent2 [text]="text"></app-parent2>
+    </div>
+</div>
+
+

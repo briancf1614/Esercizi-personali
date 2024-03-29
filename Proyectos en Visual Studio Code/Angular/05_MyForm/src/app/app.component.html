@@ -1,0 +1,71 @@
+<h1>{{title}}</h1>
+<hr>
+<!-- TEMPLATE DRIVEN FORM -->
+<!-- Adatto a form semplici che non hanno bisogno di elaborazioni complesse -->
+<!-- La direttiva ngForm fornisce al form le funzionalità Angular.
+ngForm viene inclusa di default ad ogni form grazie all'importazione di FormsModule, 
+ma è utile associarla a una variabile di temlate per la verifica globale della validità dei campi -->
+
+<form #myForm="ngForm" (ngSubmit)="submitTemplateForm()">
+    <!-- L'attributo for di <label> è, come da standard HTML, associato all'id del controllo -->
+    <label for="nome">Nome</label><br>
+    <!-- L'attributo name è necessario quando si usa ngModel: 
+    Angular lo usa per registrare l'elemento con la direttiva ngForm dell'intero form -->
+    <input type="text" id="nome" name="nome" placeholder="Nome" minlength="4" required [(ngModel)]="user.nome" #myNome='ngModel' >
+    <br>
+    <!-- Validazione
+    Si utilizzano gli stessi attributi di convalida di HTML nativo. 
+    Angular utilizza le direttive per abbinare questi attributi alle funzioni di validazione nel framework.
+    Ogni volta che il valore di un controllo modulo cambia, Angular esegue la convalida 
+    e genera un elenco di errori di convalida che determinano uno stato INVALID o null, che genera uno stato VALID.
+    È quindi possibile controllare lo stato del controllo esportando ngModel in una variabile modello locale.
+    Stato del controllo: 
+    ng-touched: il controllo è stato visitato (ha già subito un focus)
+    ng-untouched: il controllo non è stato visitato
+    ng-dirty: il valore del controllo è stato modificato
+    ng-pristine: il valore del controllo non è stato modificato   
+    ng-valid: il valore del controllo è valido
+    ng-invalid: il valore del controllo non è valido
+    <span [hidden]="myNome.valid"> Il campo non è valido </span>
+    <span [hidden]="!myNome.touched"> Il campo è stato visitato </span>
+    <span [hidden]="myNome.pristine"> Il valore è stato modificato</span>
+    -->
+    <ng-container *ngIf="myNome.invalid && (myNome.dirty || myNome.touched)">
+        <p *ngIf="myNome.errors?.['required']">Il campo è obbligatorio</p>
+        <p *ngIf="myNome.errors?.['minlength']">Il campo deve essere di almeno 4 caratteri</p>
+    </ng-container>
+    <br>    
+    <label for="password">Password</label><br>
+    <input type="number" id="password" name="password" [(ngModel)]="user.password" #myPassword='ngModel'  placeholder="Password" required>
+    <ng-container *ngIf="myPassword.invalid && (myPassword.dirty || myPassword.touched)">
+        <p *ngIf="myPassword.errors?.['required']">Il campo è obbligatorio</p>
+    </ng-container>
+    <br>
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" [(ngModel)]="user.email" #myEmail='ngModel' placeholder="Email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+    <br>
+    <ng-container *ngIf="myEmail.invalid && (myEmail.dirty || myEmail.touched)">
+        <p *ngIf="myEmail.errors?.['required']">Il campo è obbligatorio</p>
+        <p *ngIf="myEmail.errors?.['pattern']">Il formato email è errato</p>
+    </ng-container>
+    <br>
+    <label for="hobby">Hobbies</label><br>
+    <select id="hobby" name="hobby" [(ngModel)]="user.hobby" #myHobby='ngModel' required>
+        <option value="" disabled selected>Scegli il tuo hobby</option>
+        <option *ngFor="let hobby of hobbies" [value]="hobby">{{hobby}}</option>
+    </select>
+    <ng-container *ngIf="myHobby.invalid && (myHobby.dirty || myHobby.touched)">
+        <p *ngIf="myHobby.errors?.['required']">Il campo è obbligatorio</p>
+    </ng-container>
+    <br><br>
+    <!-- In base alla verifica dei campi required il pulsante è attivo o meno -->
+    <button type="submit" [disabled]="!myForm.valid">Invia</button>
+</form>
+<hr>
+<!-- Gestisce l'eventuale puntatore a oggetto null 
+<p *ngIf="logged!=null">Benvenuto {{logged.nome}} con id: {{logged.id}} sei loggato: {{logged.log}}</p> -->
+<!-- Alternativa con simbolo 'opzionale' (non richiesto se si usa l'Interfaccia) 
+<p>Benvenuto {{logged?.nome}} con id: {{logged?.id}} sei loggato: {{logged?.log}}</p> -->
+<!-- Alternativa con Interfaccia (non richiede opzionale) -->
+<p *ngIf="logged.nome!=''">Benvenuto {{logged.nome}} con id: {{logged.id}} sei loggato: {{logged.log}}</p>

@@ -1,0 +1,27 @@
+#results {     
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #eee;
+}
+
+/* Angular applica classi CSS in base allo stato dei controlli: ng-valid, ng-dirty, ng-touched, ng-pending 
+input, select{
+    padding: 4px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 4px;
+}
+.ng-pristine[required], .ng-untouched[required]{
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+.ng-valid[required] {
+    border-bottom: 1px solid rgb(0, 255, 0);
+}
+.ng-invalid:not(form)  {
+    border-bottom: 1px solid rgb(255, 0, 0);
+}
+*/
+/* Inoltre applica la classe ng-submitted agli elementi del form dopo l'invio 
+.ng-submitted * {
+    color: rgb(200, 200, 200);
+}
+*/

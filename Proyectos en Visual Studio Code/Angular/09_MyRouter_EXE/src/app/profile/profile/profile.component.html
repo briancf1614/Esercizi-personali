@@ -1,0 +1,4 @@
+<ul>
+    <li *ngFor="let note of notes">{{note.id_note}} {{note.note}} <button *ngIf="note.id_note > 18" (click)="removeNote(note.id_note)">remove</button></li>
+    <li>Note <input type="text" name="note" [(ngModel)]="note"> <button (click)="addNote()">add</button></li>
+</ul>
