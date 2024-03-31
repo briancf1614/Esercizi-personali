@@ -1,0 +1,13 @@
+<section>
+    @if (haveName ===false) {
+        <p>Dime quien eres uaglio!</p>
+    }@else {
+        <p>Ciao {{nombreHijo}} la tua chiave è {{chiave}}</p>
+    }
+    <label for="name">Escrive algo </label>
+    <input type="text" id="name" [(ngModel)]="nombreHijo">
+    <button (click)="send(nombreHijo)">envia</button>
+    @if (nombreHijo.length === 0) {
+        <p>escrive algo uaglio</p>
+    }
+</section>
