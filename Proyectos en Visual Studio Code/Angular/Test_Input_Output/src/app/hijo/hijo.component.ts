@@ -12,14 +12,11 @@ export class HijoComponent {
   nombreHijo = "";
   haveName:boolean = false
   @Input() chiave='';
-  @Output blabla = new EventEmitter<string>()
+  @Output() blabla = new EventEmitter<string>()
 
   send(texto:string){
     this.nombreHijo=texto;
     this.haveName = true;
     this.blabla.emit(this.nombreHijo);
-  }
-  getnombreHijo(username:string){
-    this.nombreHijo = username;
   }
 }

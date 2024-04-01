@@ -1,4 +1,8 @@
-<h1>Hola, tu eres.....?</h1>
+@if (nombrecito.length===0 && key.length===0) {
+  <h1>Hola, tu eres.....?</h1>
+}@else {
+  <h1>Ya se quien eres, eres: {{nombrecito}} y tu password es: {{key}}:</h1>
+}
 <section>
-  <app-padre></app-padre>
+  <app-padre (dato)="nombre($event)"></app-padre>
 </section>

@@ -1,5 +1,10 @@
 <section>
     <p>servizio Login</p>
-    <p>Tu llave es {{chiave}} y eres el usuario</p>
-    <app-hijo (blabla)="getusername()" [chiave]="chiave"></app-hijo>
+    @if (username.length ===0) {
+        <p>Tu llave es {{chiave}}</p>
+    }@else {
+        <p>Tu llave es {{chiave}} y eres el usuario {{username}}</p>
+    }
+    
+    <app-hijo (blabla)="onRicevo($event)" [chiave]="chiave"></app-hijo>
 </section>

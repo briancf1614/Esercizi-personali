@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { HijoComponent } from '../hijo/hijo.component';
 
 @Component({
@@ -9,6 +9,15 @@ import { HijoComponent } from '../hijo/hijo.component';
   styleUrl: './padre.component.css'
 })
 export class PadreComponent {
-chiave: string ='123456789';
+
+  @Output() dato = new EventEmitter<{name:string,key:string}>();
+            
+  onRicevo(event: string) {
+    this.username = event;
+    const data = {name:event,key:this.chiave}
+    this.dato.emit(data);
+  }
+  chiave: string ='123456789';
+  username:string = '';
 
 }

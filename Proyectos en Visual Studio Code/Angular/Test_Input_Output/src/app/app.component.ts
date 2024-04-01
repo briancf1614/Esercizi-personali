@@ -10,5 +10,10 @@ import { PadreComponent } from './padre/padre.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Test_Input_Output';
+nombre(event: any) {
+  this.nombrecito = event.name;
+  this.key = event.key;
+}
+  nombrecito = '';
+  key = '';
 }
