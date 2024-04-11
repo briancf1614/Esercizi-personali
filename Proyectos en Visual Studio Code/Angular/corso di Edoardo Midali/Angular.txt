@@ -1,0 +1,4 @@
+data binding:
+-Interpolazione => {{value}} in html
+-Propoerty Binding  =>  [propietàHTML]="variabileInTypesript"
+-event Binding  => ho passato tipo il evento di scrittura nel metodo (input) = "onInput($event)"  ed a ogni scritura inviava il metodo
