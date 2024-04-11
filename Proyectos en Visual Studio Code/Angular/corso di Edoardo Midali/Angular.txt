@@ -2,3 +2,13 @@ data binding:
 -Interpolazione => {{value}} in html
 -Propoerty Binding  =>  [propietàHTML]="variabileInTypesript"
 -event Binding  => ho passato tipo il evento di scrittura nel metodo (input) = "onInput($event)"  ed a ogni scritura inviava il metodo
+
+[(ngModel)] event/property binding => cambia sia nel event input che nella variabile di typescript
+
+Direttive: cose esterne tipo il ngModel che sono cose che non centrano molto con html o typescript standar ma sono tipo classi esterne, si dividonon in tre categorie:
+	-Buitin (ngClass, ngStyle, ngModel) modificano il comportamento
+		-ngModel: modifica valore elemento e typescript
+		-ngClass: si puo usare per inserire diverse classi css dentro e si puo aggiungere ternario o diversi per facilitare il cambio css
+		-ngStyle: si aggiunge solo style anche qua si puo inserire logica e ternarios
+	-attribute sono atributi creati da noi che fanno della logica dietro e modifica la apparenza
+	-Strutturali (*ngif, *ngfor) cambiano il DOM aggiungendo o rimuobendo elementi

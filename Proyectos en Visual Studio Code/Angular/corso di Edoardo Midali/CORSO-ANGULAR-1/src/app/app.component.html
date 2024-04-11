@@ -1,0 +1,33 @@
+<!-- <button mat-raised-button color="primary" (click)="onClick(this)">Primary</button> -->
+<button mat-raised-button color="primary" (click)="onClick($event)">Primary</button>
+
+<mat-form-field class="example-full-width">
+    <mat-label>Favorite food</mat-label>
+    <!-- <input matInput placeholder="Ex. Pizza" (input)="onInput($event)"> -->
+    <input matInput placeholder="Ex. Pizza" [(ngModel)]="title">
+</mat-form-field>
+
+<!-- <div *ngIf="isVisible; else bloccoElse">Sono visible</div>
+<ng-template #bloccoElse>
+    <p>non sono visible</p>
+</ng-template> -->
+
+
+<!--oppure si usa {class:true/false,}-->
+<!-- <ul>
+    <li *ngFor="let persona of persone;count as count, index as i, first as isFirst, last as isLast,even as isEven, odd as isOdd">
+        <div class="cerchio" [ngClass]="persona.isOnline ? 'cerchioOnline':'cerchioOffline'"></div> 
+        <p>{{count}}-{{isFirst}}-{{isLast}}-{{isEven}}-{{isOdd}}{{i}} {{persona.nome}} {{persona.cognome}}</p>
+    </li>
+</ul> -->
+
+<!-- <div [ngSwitch]="numero">
+    <p *ngSwitchCase="1">uno</p>
+    <p *ngSwitchCase="">due</p>
+    <p *ngSwitchCase="">tre</p>
+    <p *ngSwitchDefault="">quatro</p>
+</div> -->
+
+<app-prova [data]="persone"></app-prova>
+
+<button (click)="changes()">change</button>

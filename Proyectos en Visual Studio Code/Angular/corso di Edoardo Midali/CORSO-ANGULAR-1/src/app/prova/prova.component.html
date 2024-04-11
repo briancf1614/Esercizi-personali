@@ -1,7 +1,7 @@
-<mat-card class="example-card">
+<!-- <mat-card class="example-card">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
+    <mat-card-title>{{data[0].nome}}</mat-card-title>
     <mat-card-subtitle>Dog Breed</mat-card-subtitle>
   </mat-card-header>
   <img mat-card-image [src]="imagine" alt="Photo of a Shiba Inu">
@@ -16,4 +16,8 @@
     <button mat-button>LIKE</button>
     <button mat-button>SHARE</button>
   </mat-card-actions>
-</mat-card>
+</mat-card> -->
+
+<div *ngFor="let persona of data">
+  <p [ngStyle]="{color:persona.isOnline ? 'green':'red'}">{{persona.nome}} {{persona.cognome}}</p>
+</div>

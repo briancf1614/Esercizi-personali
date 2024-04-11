@@ -1,19 +1,24 @@
-import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, OnDestroy, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-prova',
   standalone: true,
-  imports: [MatButtonModule,MatCardModule],
+  imports: [MatButtonModule,MatCardModule,CommonModule],
   templateUrl: './prova.component.html',
   styleUrl: './prova.component.css'
 })
-export class ProvaComponent implements OnInit{
+export class ProvaComponent implements OnInit, OnChanges{
   constructor() {
     console.log("costruttore")
   }
-  
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(changes);
+  }
+  @Input() data: any;
+
   cani = [
     {
       nome:'roger',
@@ -33,6 +38,7 @@ export class ProvaComponent implements OnInit{
   
 
   ngOnInit(): void {
+    console.log(this.data)
     console.log("ngOnInit")
     let counter = 0;
     setInterval(()=>{
