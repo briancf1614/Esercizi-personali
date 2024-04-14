@@ -10,9 +10,7 @@ import { ProvaComponent } from "./prova/prova.component";
     imports: [RouterOutlet, ProvaComponent]
 })
 export class AppComponent {
-  riceviDati() {
-  throw new Error('Method not implemented.');
-  }
+
   title = 'CORSO-ANGULAR-2-basi-e-output';
-algo: any;
+algo: string = '';
 }
