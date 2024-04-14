@@ -12,3 +12,4 @@ Direttive: cose esterne tipo il ngModel che sono cose che non centrano molto con
 		-ngStyle: si aggiunge solo style anche qua si puo inserire logica e ternarios
 	-attribute sono atributi creati da noi che fanno della logica dietro e modifica la apparenza
 	-Strutturali (*ngif, *ngfor) cambiano il DOM aggiungendo o rimuobendo elementi
+
