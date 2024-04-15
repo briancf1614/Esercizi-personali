@@ -1,11 +1,12 @@
 import { AfterViewInit, ElementRef, EventEmitter, Input, OnInit, ViewChild, viewChild } from '@angular/core';
 import { Output } from '@angular/core';
 import { Component } from '@angular/core';
+import { HighlightDirective } from '../direttive/highlight.directive';
 
 @Component({
   selector: 'app-prova',
   standalone: true,
-  imports: [],
+  imports: [HighlightDirective],
   templateUrl: './prova.component.html',
   styleUrl: './prova.component.css'
 })
