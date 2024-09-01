@@ -28,3 +28,4 @@ zona desmilitarizada DMZ
 host bastion torre da controllo punto critico dove passa internet e lui filtra tutto
 
 Accespoint puo creare una nuova rete  veloce e conveniente
+TOpologia fisica y logica
