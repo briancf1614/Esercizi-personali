@@ -1,0 +1,30 @@
+OSI: 7 stratti ogni stratto interatuta solo con il seguente o il anteriore -- vecchio ma spiega bene il funzionamento
+TCP/IP
+
+capa di transporto in modello TCP/IP:
+-Protocollo TCP: p control transmision connessione ordinata e affidabile pacchetti si assicura che vengano ricevuti  navigazione web,FTP,SMTP
+-Protocollo UDP:user datagram p -- veloce in tempo reale -- ma non garantisce che non si perdano dati -- come streamming video audio voip
+capa di applicazione:
+- FTP=>21 -- SSH(sicuro)=>22 -- Telnet(non sicuro)=>23 -- SMTP=>25 -- HTTP=>80 -- HTTPS=>443 -- SMB(cartelle di red autenticazione)=>445,POP3()download mail=>110 -- DNS=>53
+ci sono in totale da 0-65535 porte
+
+ipv4 sistema a 32bits 8.8.8.8=>4bytes => 2ottavi=256-1
+
+classi ip IPv4
+A ==== 0.0.0.0 ==== 127.255.255.255
+B ==== 128.0.0.0 ==== 191.255.255.255
+C ==== 192.0.0.0 ==== 223.255.255.255
+D ==== 224.0.0.0 ==== 239.255.255.255  	-> multicast
+E ==== 240.0.0.0 ==== 255.255.255.255	-> riservate
+
+Protocollo ICMC per messaggi di eco per rilevare la salute della conessione  ping o robe del genere
+
+modem; modulano e demodulano i dati digitali a segnali di reti BOH connessione con a rete pubblica
+hub(si suddivide la banda nello switch no ona per ciascuno), bridge
+Router, gateway->connete diversi tipi di reti conversione (lento)
+
+firewall encaminador->gratuito router
+zona desmilitarizada DMZ
+host bastion torre da controllo punto critico dove passa internet e lui filtra tutto
+
+Accespoint puo creare una nuova rete  veloce e conveniente
