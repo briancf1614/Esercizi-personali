@@ -1,5 +1,0 @@
-<resources>
-    <string name="input">EditText</string>
-    <string name="check">CheckBox</string>
-    <string name="textarea">EditText</string>
-</resources>
