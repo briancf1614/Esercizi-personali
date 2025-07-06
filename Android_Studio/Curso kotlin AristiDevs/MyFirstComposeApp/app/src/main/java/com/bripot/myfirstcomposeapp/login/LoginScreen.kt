@@ -34,4 +34,3 @@ fun Example(a: String){
             .background(color = Color.Red)
     )
 }
-
