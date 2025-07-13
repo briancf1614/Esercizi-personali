@@ -10,7 +10,15 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.bripot.myfirstcomposeapp.components.MyButon
+import com.bripot.myfirstcomposeapp.components.MyNetworkImage
+import com.bripot.myfirstcomposeapp.components.MySwitch
 import com.bripot.myfirstcomposeapp.components.MyText
+import com.bripot.myfirstcomposeapp.components.MyTextField
+import com.bripot.myfirstcomposeapp.components.MyTextFieldParent
+import com.bripot.myfirstcomposeapp.components.Progress
+import com.bripot.myfirstcomposeapp.components.ProgressAdvance
+import com.bripot.myfirstcomposeapp.components.ProgressAnimation
 import com.bripot.myfirstcomposeapp.login.Greeting
 import com.bripot.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
@@ -21,13 +29,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyText(Modifier.padding(innerPadding))
+                    MySwitch(Modifier.padding(innerPadding))
                 }
             }
         }
     }
 }
-
 
 
 @Preview(showBackground = true)
