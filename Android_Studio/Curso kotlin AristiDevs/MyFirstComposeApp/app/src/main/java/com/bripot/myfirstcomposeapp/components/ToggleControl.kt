@@ -102,7 +102,8 @@ fun ParentCheckBoxes(modifier: Modifier = Modifier) {
                 ),
                 CheckBoxState(
                     id = "newsLetter",
-                    label = "Recivir news letter"
+                    label = "Recivir news letter",
+                    checked = true
                 ),
                 CheckBoxState(
                     id = "updates",
@@ -115,7 +116,16 @@ fun ParentCheckBoxes(modifier: Modifier = Modifier) {
         state.forEach { myState ->
             CheckBocxWithText(
                 checkBoxState = myState
-            ) {}
+            ) {
+                // TErminologia di state hoisting in pratica significa che lo stato non cèla la UI ma la lavoriamo tramite codice(credo)
+                state = state.map {
+                    if (it.id == myState.id){
+                        myState.copy(checked =  !myState.checked)
+                    }else{
+                        it
+                    }
+                }
+            }
         }
     }
 }
