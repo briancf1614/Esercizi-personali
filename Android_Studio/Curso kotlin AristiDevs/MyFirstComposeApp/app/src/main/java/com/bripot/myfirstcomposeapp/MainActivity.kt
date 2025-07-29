@@ -20,6 +20,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.bripot.myfirstcomposeapp.components.MyButon
 import com.bripot.myfirstcomposeapp.components.MyCheckbox
 import com.bripot.myfirstcomposeapp.components.MyNetworkImage
+import com.bripot.myfirstcomposeapp.components.MyRadioButton
+import com.bripot.myfirstcomposeapp.components.MyRadioButtonList
+import com.bripot.myfirstcomposeapp.components.MySlider
+import com.bripot.myfirstcomposeapp.components.MySliderAdvance
 import com.bripot.myfirstcomposeapp.components.MySwitch
 import com.bripot.myfirstcomposeapp.components.MyText
 import com.bripot.myfirstcomposeapp.components.MyTextField
@@ -28,6 +32,7 @@ import com.bripot.myfirstcomposeapp.components.ParentCheckBoxes
 import com.bripot.myfirstcomposeapp.components.Progress
 import com.bripot.myfirstcomposeapp.components.ProgressAdvance
 import com.bripot.myfirstcomposeapp.components.ProgressAnimation
+import com.bripot.myfirstcomposeapp.components.TriStateCheckBox
 import com.bripot.myfirstcomposeapp.login.Greeting
 import com.bripot.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
@@ -38,7 +43,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ParentCheckBoxes(Modifier.padding(innerPadding))
+                    MySliderAdvance(Modifier.padding(innerPadding))
                 }
             }
         }
