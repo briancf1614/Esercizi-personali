@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-family: 'helvetica neue', helvetica, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid rgba(0,0,200,0.6);
+            background: rgba(0,0,200,0.3);
+            color: rgba(0,0,200,0.6);
+            box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+            border-radius: 10px;
+            padding: 3px 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <P>Player 1 :Chris</P>
+    <script>
+        let response = fetch('https://pokeapi.co/api/v2/language/9').then(function(response){
+            return response.json();
+        }).then(function(json){
+            clase = json;
+            console.log('dati', clase)
+        }).catch(function(error){
+            consol.log('hubo un error bitches', error.message)
+        })
+ 
+
+        // function loadAsset(url, type, callback)
+        // {
+        //     let xhr = new XMLHttpRequest();
+        //     xhr.open('GET', url);
+        //     xhr.responseType = type;
+
+        //     xhr.onload = function (){
+        //         callback(xhr.response);
+        //     }
+        //     xhr.send();
+        // }
+        // function displayImage(blob){
+        //     let objectUrl = URL.createObjectURL(blob);
+        //     let image = document.createElement('img')
+        //     image.src = objectUrl;
+        //     document.body. appendChild(image)
+        // }
+
+        // loadAsset('https://ak.picdn.net/shutterstock/videos/11773709/thumb/10.jpg', 'blob', displayImage);
+        
+    </script>
+</body>
+</html>

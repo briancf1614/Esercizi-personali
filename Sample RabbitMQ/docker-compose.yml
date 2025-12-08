@@ -1,0 +1,15 @@
+services:
+  rabbitmq:
+    image: rabbitmq:4-management
+    container_name: lab-rabbitmq
+    ports:
+      - "5672:5672"   # Puerto para que tu API y Worker se conecten
+      - "15672:15672" # Puerto para que tu veas el panel web
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+
+volumes:
+  rabbitmq_data:
