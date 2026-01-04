@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../OperationComponent/OperationComponent.csproj" />
+  <Project Path="TestComponent.csproj" />
+</Solution>
