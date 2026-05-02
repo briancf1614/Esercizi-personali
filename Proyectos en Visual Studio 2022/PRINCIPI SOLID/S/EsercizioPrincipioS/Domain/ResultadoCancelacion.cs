@@ -4,6 +4,6 @@
     {
         public bool Exito { get; set; }
         public decimal PenalidadCobrada { get; set; }
-        public string Mensaje { get; set; }
+        public string Mensaje { get; set; } = string.Empty;
     }
 }

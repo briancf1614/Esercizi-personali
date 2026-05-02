@@ -1,6 +1,49 @@
 @EsercizioPrincipioS_HostAddress = http://localhost:5286
 
-GET {{EsercizioPrincipioS_HostAddress}}/weatherforecast/
-Accept: application/json
+### Cancelar suscripción plan Basico
+POST {{EsercizioPrincipioS_HostAddress}}/api/Cancelacion
+Content-Type: application/json
 
-###
+{
+  "id": 1,
+  "usuario": {
+    "id": 1,
+    "nombre": "Juan",
+    "email": "juan@example.com"
+  },
+  "planActual": "Basico",
+  "costoMensual": 100.0,
+  "estaActiva": true
+}
+
+### Cancelar suscripción plan Pro
+POST {{EsercizioPrincipioS_HostAddress}}/api/Cancelacion
+Content-Type: application/json
+
+{
+  "id": 2,
+  "usuario": {
+    "id": 2,
+    "nombre": "Maria",
+    "email": "maria@example.com"
+  },
+  "planActual": "Pro",
+  "costoMensual": 200.0,
+  "estaActiva": true
+}
+
+### Cancelar suscripción plan Enterprise
+POST {{EsercizioPrincipioS_HostAddress}}/api/Cancelacion
+Content-Type: application/json
+
+{
+  "id": 3,
+  "usuario": {
+    "id": 3,
+    "nombre": "Carlos",
+    "email": "carlos@example.com"
+  },
+  "planActual": "Enterprise",
+  "costoMensual": 500.0,
+  "estaActiva": true
+}

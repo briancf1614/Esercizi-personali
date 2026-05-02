@@ -1,5 +1,5 @@
-using EsercizioPrincipioS.Business.Services;
 using EsercizioPrincipioS.Domain;
+using EsercizioPrincipioS.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EsercizioPrincipioS.Controllers
@@ -18,8 +18,15 @@ namespace EsercizioPrincipioS.Controllers
         [HttpPost]
         public async Task<IActionResult> CancelarSuscripcion([FromBody] Suscripcion suscripcion)
         {
-            var result = await _cancelacionService.CancelarSuscripcion(suscripcion);
-            return Ok(result);
+            try
+            {
+                var result = await _cancelacionService.CancelarSuscripcion(suscripcion);
+                return Ok(result);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
         }
     }
 }

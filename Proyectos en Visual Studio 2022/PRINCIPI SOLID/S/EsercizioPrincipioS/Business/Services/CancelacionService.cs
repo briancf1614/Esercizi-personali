@@ -3,10 +3,6 @@ using EsercizioPrincipioS.Domain.Interfaces;
 
 namespace EsercizioPrincipioS.Business.Services
 {
-    public interface ICancelacionService
-    {
-        Task<ResultadoCancelacion> CancelarSuscripcion(Suscripcion suscripcion);
-    }
     public class CancelacionService : ICancelacionService
     {
         private readonly IEnumerable<ICalculadorPenalidadStrategy> _strategiesPenalidad;
